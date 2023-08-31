@@ -1,0 +1,99 @@
+body{
+    margin:0px;
+}
+.mainframe{
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ludoboard{
+    background-color: white;
+    border:0.6px solid black;
+    width:600px;
+    height:600px;
+    display: grid;
+    grid-template-columns: repeat(15,40px);
+    grid-template-rows: repeat(15,40px);
+}
+
+.centerbox{
+    grid-column: 7/10;
+    grid-row: 7/10;
+    width:0px;
+    height:0px;
+    border-top:60px solid green;
+    border-bottom:60px solid yellow;
+    border-left:60px solid #f7162d;
+    border-right:60px solid blue ;
+}
+.red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #f7162d;
+border:0.6px solid #9e0616;
+    grid-column: 1/7;
+    grid-row: 1/7;
+}
+.redsafe{
+background-color: #f7162d;
+border:0.6px solid black;
+}
+.playerzone{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.player{
+    border: 0.8px solid black;    
+    border-radius:50%;
+    background-color: white;
+    opacity:0.9;
+    width:50px;
+    height:50px;
+}
+.green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color:green ;
+border:0.6px solid darkgreen;
+    grid-column: 10/16;
+    grid-row: 1/7;
+}
+.greensafe{
+  background-color:green ;
+border:0.6px solid black;  
+}
+.step{
+    border:0.6px solid black;
+}
+.yellow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color :yellow ;
+border:0.6px solid yellowgreen;
+    grid-column: 1/7;
+    grid-row: 10/16;
+}
+.yellowsafe{
+    background-color: yellow;
+border: 0.6px solid black;
+}
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color:blue ;
+border:0.6px solid darkblue;  
+    grid-column: 10/16;
+    grid-row: 10/16;
+}
+.bluesafe{
+    background-color:blue;
+border:0.6px solid black;
+}
