@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Ludo board</title>
-    <link rel="stylesheet" href="main.css" >
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div id="mainframe">
-        <section class="ludoboard">
+        <div class="ludoboard">
+            
             <!-- Red Zone -->
-            <section class="red"> 
-                <div class="playerzone">
-                    <div class="player" aria-label="red player 1"></div>
-                    <div class="player" aria-label="red player 2"></div>
-                    <div class="player" aria-label="red player 3"></div>
-                    <div class="player" aria-label="red player 4"></div>
-                </div>
+            <section class="red player-zone">
+                <div class="player" aria-label="red player 1"></div>
+                <div class="player" aria-label="red player 2"></div>
+                <div class="player" aria-label="red player 3"></div>
+                <div class="player" aria-label="red player 4"></div>
             </section>
-
-            <!-- Steps -->
+            
+            <!-- Steps in Row 1 -->
             <div class="step" aria-label="step 1"></div>
             <div class="step" aria-label="step 2"></div>
-            <!-- ... truncated for brevity -->
+            <!-- ... more steps -->
 
             <!-- Green Zone -->
-            <section class="green">
-                <div class="playerzone">
-                    <div class="player" aria-label="green player 1"></div>
-                    <div class="player" aria-label="green player 2"></div>
-                    <div class="player" aria-label="green player 3"></div>
-                    <div class="player" aria-label="green player 4"></div>
-                </div>
+            <section class="green player-zone">
+                <div class="player" aria-label="green player 1"></div>
+                <div class="player" aria-label="green player 2"></div>
+                <div class="player" aria-label="green player 3"></div>
+                <div class="player" aria-label="green player 4"></div>
             </section>
 
-            <!-- ... continue for other colors -->
-        </section>
+            <!-- ... more steps and safe zones -->
+
+            <!-- Yellow Zone -->
+            <section class="yellow player-zone">
+                <div class="player" aria-label="yellow player 1"></div>
+                <div class="player" aria-label="yellow player 2"></div>
+                <div class="player" aria-label="yellow player 3"></div>
+                <div class="player" aria-label="yellow player 4"></div>
+            </section>
+
+            <!-- ... more steps and safe zones -->
+
+            <!-- Blue Zone -->
+            <section class="blue player-zone">
+                <div class="player" aria-label="blue player 1"></div>
+                <div class="player" aria-label="blue player 2"></div>
+                <div class="player" aria-label="blue player 3"></div>
+                <div class="player" aria-label="blue player 4"></div>
+            </section>
+
+            <!-- ... more steps and safe zones -->
+
+            <!-- Center Box -->
+            <div class="centerbox"></div>
+
+        </div>
     </div>
 </body>
 </html>
